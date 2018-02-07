@@ -1,0 +1,16 @@
+#N canvas 847 62 450 300 10;
+#X obj 12 39 unpack 0 0 0;
+#X obj 12 18 inlet;
+#X obj 12 196 outlet;
+#X obj 12 171 expr ($f1+$f2+$f3)*0.15;
+#X obj 12 130 waveformLength;
+#X obj 46 100 waveformLength;
+#X obj 81 70 waveformLength;
+#X connect 0 0 4 0;
+#X connect 0 1 5 0;
+#X connect 0 2 6 0;
+#X connect 1 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 1;
+#X connect 6 0 3 2;

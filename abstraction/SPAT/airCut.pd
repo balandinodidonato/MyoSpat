@@ -1,0 +1,24 @@
+#N canvas 0 22 664 259 10;
+#X text 12 27 Distance;
+#X obj 13 208 outlet;
+#X text 12 230 cut-off frequency;
+#X text 158 128 calcolo della frequenza di taglio del filtro passa
+basso. La frequenza aumenta al diminuire della freuenza secondo la
+formula 3.6 a pagina 47 della tua tesi che ci hai fornito. Fc(t) =
+(10^4.88) * (d^-0.698);
+#X obj 13 76 pow -0.698;
+#X obj 13 100 * 75857.8;
+#X obj 13 124 min 20000;
+#X obj 87 53 \$1;
+#X obj 87 24 inlet;
+#X obj 140 28 loadbang;
+#X obj 13 177 line;
+#X msg 13 153 \$1 20;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 11 0;
+#X connect 7 0 4 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 0;
+#X connect 10 0 1 0;
+#X connect 11 0 10 0;

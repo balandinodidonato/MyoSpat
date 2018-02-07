@@ -1,0 +1,12 @@
+#N canvas 333 308 292 206 10;
+#X obj 31 62 list prepend b;
+#X obj 31 87 list prepend /outputs/rgb/\$1;
+#X obj 31 38 r LEDs-\$1;
+#X obj 10 139 outlet;
+#X obj 10 115 list;
+#X obj 10 12 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 4 1;
+#X connect 2 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;

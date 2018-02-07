@@ -1,0 +1,10 @@
+#N canvas 879 181 450 300 10;
+#X obj 53 219 packOSC;
+#X msg 54 191 send /ard/aaa 1000;
+#X obj 77 257 mrpeach/udpsend;
+#X msg 143 230 connect 192.168.0.177 10000;
+#X msg 178 190 disconnect;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;

@@ -1,0 +1,17 @@
+#N canvas 628 438 520 181 10;
+#X obj 14 21 inlet;
+#X obj 14 47 t b f f;
+#X obj 14 99 -;
+#X obj 44 79 f;
+#X obj 14 121 abs;
+#X obj 14 143 outlet;
+#X text 112 21 Feature implemented from: Zinal A. et Al \, (2015) Comparison
+of Five TIme Series EMG Features Extractions Using Myo Armband \, 2015
+International Electronics Symposium (IES).;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 1 2 0;
+#X connect 1 2 3 1;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;
+#X connect 4 0 5 0;

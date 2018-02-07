@@ -1,0 +1,5 @@
+#N canvas 605 542 450 300 10;
+#X obj 75 145 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 75 123 biRamp 10 50;
+#X connect 1 0 0 0;

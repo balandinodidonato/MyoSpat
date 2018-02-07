@@ -1,0 +1,71 @@
+SVM_MODEL_FILE_V2.0
+Trained: 1
+UseScaling: 1
+NumInputDimensions: 2
+NumOutputDimensions: 0
+NumTrainingIterationsToConverge: 0
+MinNumEpochs: 0
+MaxNumEpochs: 100
+ValidationSetSize: 20
+LearningRate: 0.1
+MinChange: 1e-05
+UseValidationSet: 0
+RandomiseTrainingOrder: 1
+UseNullRejection: 0
+ClassifierMode: 0
+NullRejectionCoeff: 5
+NumClasses: 3
+NullRejectionThresholds:  0 0 0
+ClassLabels:  1 2 3
+Ranges: 
+0.334559	0.983745
+0.244506	0.621122
+ModelType: C_SVC
+KernelType: LINEAR
+Degree: 3
+Gamma: 0.5
+Coef0: 0
+NumberOfFeatures: 2
+UseShrinking: 1
+UseProbability: 1
+NumberOfSupportVectors: 29
+RHO: 
+0.57231	0.00869451	-0.357228	
+Label: 
+1	2	3	
+ProbA: 
+-4.41664	-4.26751	-4.45391	
+ProbB: 
+-0.94784	-0.654068	-0.0329734	
+NumSupportVectorsPerClass: 
+10	10	9	
+SupportVectors: 
+1	0	1	-0.485603	2	0.270296	
+1	0	1	-0.485589	2	0.270574	
+1	0	1	-0.485644	2	0.270699	
+1	0	1	-0.485574	2	0.27081	
+0.736578	0	1	-0.485736	2	0.27236	
+1	0	1	-0.485736	2	0.27236	
+0	1	1	-0.506927	2	0.203463	
+0	1	1	-0.50643	2	0.203019	
+0	1	1	-0.50603	2	0.203979	
+0	0.639331	1	-0.501809	2	0.205859	
+-0.736578	0	1	0.109636	2	0.276156	
+-1	0	1	0.100608	2	0.295386	
+-1	0	1	0.0959319	2	0.304428	
+-1	0	1	0.0940366	2	0.312043	
+-1	0	1	0.0971038	2	0.324458	
+-1	0	1	0.103507	2	0.331254	
+-0	1	1	0.394832	2	0.108417	
+-0	1	1	0.318427	2	0.127686	
+-0	1	1	0.330046	2	0.123305	
+-0	0.962809	1	0.355616	2	0.121821	
+-0.639331	-0	1	-0.17698	2	-0.468229	
+-1	-0	1	-0.217753	2	-0.479663	
+-1	-0	1	-0.252486	2	-0.477991	
+-1	-0	1	-0.268478	2	-0.49163	
+-0	-0.89275	1	0.99638	2	-0.847747	
+-0	-0.0700593	1	-0.150178	2	-0.460614	
+-0	-1	1	-0.14043	2	-0.457814	
+-0	-1	1	-0.130174	2	-0.461963	
+-0	-1	1	-0.119883	2	-0.469155	

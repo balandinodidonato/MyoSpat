@@ -1,0 +1,10 @@
+#N canvas 617 374 344 312 10;
+#X obj 18 132 mono_reverb12~;
+#X obj 18 16 receive~ extend;
+#X obj 144 81 r extend;
+#X floatatom 144 103 5 0 0 0 - - -, f 5;
+#X obj 18 160 throw~ crumplingSig;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X coords 0 -1 1 1 80 20 1 100 100;
