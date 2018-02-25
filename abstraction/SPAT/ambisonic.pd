@@ -4,7 +4,7 @@
 #X obj 94 728 outlet~;
 #X obj 315 87 * 2;
 #X obj 318 65 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9220 1;
+-1 -1 0 1;
 #X floatatom 315 43 5 0 0 0 - - -, f 5;
 #X obj 95 113 inlet~;
 #X obj 315 15 r currentPosition;
@@ -39,7 +39,7 @@
 #X msg 594 202 \$1 30;
 #X obj 594 180 * 3.14159;
 #X obj 594 224 vline~;
-#X obj 375 388 hoa.2d.decoder~ 1 regular 4 ---------;
+#X obj 375 348 hoa.2d.decoder~ 1 regular 4 ---------;
 #X obj 96 679 gain~ 20;
 #X obj 105 636 sel 1;
 #X msg 105 658 1;
@@ -59,10 +59,10 @@
 #X obj 332 553 loadbang;
 #X obj 332 575 f \$1;
 #X obj 332 597 t f f f f;
-#X obj 511 411 *~ 0.7;
-#X obj 581 411 *~ 0.7;
-#X obj 441 411 *~ 0.7;
-#X obj 375 410 *~ 0.7;
+#X obj 511 371 *~ 0.7;
+#X obj 581 371 *~ 0.7;
+#X obj 441 371 *~ 0.7;
+#X obj 375 370 *~ 0.7;
 #X connect 0 0 20 0;
 #X connect 1 0 0 0;
 #X connect 3 0 1 0;

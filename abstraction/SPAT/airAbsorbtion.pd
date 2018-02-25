@@ -1,4 +1,4 @@
-#N canvas 264 424 285 294 10;
+#N canvas 264 424 267 209 10;
 #X obj 87 28 inlet;
 #X text 12 5 signal;
 #X text 84 5 distance;
@@ -37,12 +37,12 @@
 #X connect 8 2 7 0;
 #X connect 9 0 11 0;
 #X connect 10 0 8 0;
-#X restore 142 178 pd analysis;
-#X obj 142 151 spigot;
-#X obj 175 123 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X restore 114 158 pd analysis;
+#X obj 114 131 spigot;
+#X obj 147 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 176 81 loadbang;
-#X msg 176 101 1;
+#X obj 148 61 loadbang;
+#X msg 148 81 1;
 #X obj 87 94 t f f;
 #X connect 0 0 7 0;
 #X connect 4 0 3 0;
