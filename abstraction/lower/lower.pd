@@ -1,26 +1,26 @@
-#N canvas 438 127 1125 727 10;
-#X text 842 -217 init-bang;
-#X text 121 -190 dithering-noise against denormal floatingpoint numbers
+#N canvas 237 22 1203 852 10;
+#X text 842 -92 init-bang;
+#X text 121 -65 dithering-noise against denormal floatingpoint numbers
 (SSE2-Register);
-#X obj 306 308 *~;
-#X obj 204 269 *~;
-#X obj 204 327 +~;
-#X obj 219 138 phasor~;
-#X obj 219 116 line~;
-#X obj 426 203 wrap~;
-#X obj 426 180 +~ 0.5;
-#X obj 426 233 *~ 512;
-#X obj 426 256 +~ 1;
-#X obj 219 165 *~ 512;
-#X obj 219 188 +~ 1;
-#X obj 219 50 * 1;
-#X obj 238 26 /;
-#X obj 219 -48 t b b f;
-#X obj 426 278 tabread4~ \$0_win;
-#X obj 219 218 tabread4~ \$0_win;
-#X obj 219 71 clip -4000 4000;
-#X obj 238 1 /;
-#X msg 848 -107 \; \$1 0 -0.00308228 0 0.00308228 0.00619507 0.0093689
+#X obj 306 433 *~;
+#X obj 204 394 *~;
+#X obj 204 452 +~;
+#X obj 219 263 phasor~;
+#X obj 219 241 line~;
+#X obj 426 328 wrap~;
+#X obj 426 305 +~ 0.5;
+#X obj 426 358 *~ 512;
+#X obj 426 381 +~ 1;
+#X obj 219 290 *~ 512;
+#X obj 219 313 +~ 1;
+#X obj 219 175 * 1;
+#X obj 238 151 /;
+#X obj 219 77 t b b f;
+#X obj 426 403 tabread4~ \$0_win;
+#X obj 219 343 tabread4~ \$0_win;
+#X obj 219 196 clip -4000 4000;
+#X obj 238 126 /;
+#X msg 848 18 \; \$1 0 -0.00308228 0 0.00308228 0.00619507 0.0093689
 0.0125427 0.0157776 0.0190735 0.0223694 0.0257263 0.0291138 0.0325317
 0.0359802 0.0394592 0.0429993 0.0465698 0.0501709 0.0538025 0.0574646
 0.0611572 0.0649109 0.0686951 0.0724792 0.0763245 0.0802002 0.0841064
@@ -86,38 +86,36 @@
 0.0538025 0.0501709 0.0465698 0.0429993 0.0394592 0.0359802 0.0325317
 0.0291138 0.0257263 0.0223694 0.0190735 0.0158081 0.0125427 0.0093689
 0.00619507 0.00308228 -0.00619507 -0.0093689;
-#X obj 848 -133 symbol \$0_win;
-#X obj 863 -159 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 848 -8 symbol \$0_win;
+#X obj 863 -34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 913 -162 table \$0_win 515;
-#X obj 219 -74 * 1000;
-#X obj 306 266 +~ 2;
-#X obj 115 188 +~ 2;
-#X obj 219 -99 clip 0.001 2;
-#X msg 238 -21 -1000 440;
-#X obj 219 94 pack 1.3e-05 20;
-#X text 522 -201 parameters;
-#X text 58 -186 sig.in;
-#X obj 306 288 vd~ \$0_psh_del;
-#X obj 204 247 vd~ \$0_psh_del;
-#X obj 422 -84 delwrite~ \$0_psh_del 4000;
-#X obj 115 166 line_mul~ 50 20;
-#X obj 306 242 line_mul~ 50 20;
-#X obj 1013 -225 loadbang;
-#X obj 1014 -205 s init-\$0;
-#X obj 219 -143 r init-\$0;
-#X msg 219 -121 0.04;
-#X obj 848 -201 r init-\$0;
-#X obj 144 -49 loadbang;
-#X msg 157 23 -220;
-#X obj 422 -105 receive~ lower;
-#X obj 64 0 r lower;
-#X floatatom 64 22 5 0 0 0 - - -, f 5;
-#X obj 204 373 throw~ crumplingSig;
-#X obj 204 349 *~ 0.8;
+#X obj 913 -37 table \$0_win 515;
+#X obj 219 51 * 1000;
+#X obj 306 391 +~ 2;
+#X obj 115 313 +~ 2;
+#X obj 219 26 clip 0.001 2;
+#X msg 238 104 -1000 440;
+#X obj 219 219 pack 1.3e-05 20;
+#X text 522 -76 parameters;
+#X text 58 -61 sig.in;
+#X obj 306 413 vd~ \$0_psh_del;
+#X obj 204 372 vd~ \$0_psh_del;
+#X obj 422 41 delwrite~ \$0_psh_del 4000;
+#X obj 115 291 line_mul~ 50 20;
+#X obj 306 367 line_mul~ 50 20;
+#X obj 1013 -100 loadbang;
+#X obj 1014 -80 s init-\$0;
+#X obj 219 -18 r init-\$0;
+#X msg 219 4 0.04;
+#X obj 848 -76 r init-\$0;
+#X obj 144 76 loadbang;
+#X msg 157 148 -220;
+#X obj 422 20 receive~ lower;
+#X obj 204 498 throw~ crumplingSig;
+#X obj 204 474 *~ 0.8;
 #X connect 2 0 4 1;
 #X connect 3 0 4 0;
-#X connect 4 0 48 0;
+#X connect 4 0 46 0;
 #X connect 5 0 8 0;
 #X connect 5 0 11 0;
 #X connect 5 0 35 0;
@@ -159,6 +157,5 @@
 #X connect 42 0 43 0;
 #X connect 43 0 13 0;
 #X connect 44 0 34 0;
-#X connect 45 0 46 0;
-#X connect 48 0 47 0;
-#X coords 0 -1 1 1 80 20 1 20 20;
+#X connect 46 0 45 0;
+#X coords 0 852 1 851 80 20 0;
