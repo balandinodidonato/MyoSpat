@@ -29,7 +29,7 @@
 #X connect 1 0 12 0;
 #X connect 1 0 13 0;
 #X connect 11 0 14 0;
-#X restore 302 56 pd delcare+init;
+#X restore 309 61 pd delcare+init;
 #N canvas 97 126 822 584 audioIO 0;
 #X obj 536 382 vsl 28 128 0 4 0 0 empty empty empty 0 -9 0 10 -258113
 -1 -1 3175 1;
@@ -103,9 +103,9 @@
 #X coords 0 -1 1 1 800 250 1 5 300;
 #X restore 8 109 pd audioIO;
 #X text 9 4 MyoSpat;
-#X obj 314 78 receiver;
-#X obj 487 27 router~;
-#N canvas 770 488 335 128 processing 1;
+#X obj 296 83 receiver;
+#X obj 492 27 router~;
+#N canvas 770 488 335 128 processing 0;
 #X obj 11 98 throw;
 #X obj 10 56 lower;
 #X obj 10 35 extend;
@@ -133,15 +133,9 @@
 #X connect 17 0 8 0;
 #X connect 17 0 12 0;
 #X coords 0 -1 1 1 150 75 1 80 40;
-#X restore 653 27 pd processing;
+#X restore 658 27 pd processing;
 #X text 9 21 MyoSpat \, is a hand-gesture controlled system for sound
 and lingt projections manipulation.;
+#X obj 379 83 ml;
+#X obj 407 27 lighting;
 #X text 318 365 balandinodidonato.com;
-#X obj 373 36 ml;
-#X obj 131 65 bng 15 250 50 0 resetNorm-2 empty cal.light 17 7 0 10
--262144 -1 -1;
-#X obj 14 65 bng 15 250 50 0 resetNorm-3 empty cal.crumbleGate 17 7
-0 10 -262144 -1 -1;
-#X obj 14 84 bng 15 250 50 0 resetNorm-2 empty cal.crumble 17 7 0 10
--262144 -1 -1;
-#X obj 400 26 lighting;
